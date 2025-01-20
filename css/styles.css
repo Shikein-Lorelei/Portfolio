@@ -1,0 +1,28 @@
+body{
+    min-height: 2000px;
+}
+.jumbotron{
+    padding-top: 7rem;
+    background-color: rgb(23, 2, 56);
+    color: white;
+}
+#aboutbg{
+    background-color: rgba(119, 66, 199, 0.498);
+}
+.border{
+    padding: 20px 10px;
+}
+#projects{
+    background-color: rgb(23, 2, 56);
+    color: white;
+}
+#projects > img{
+    width: 100px;
+    height: 20px;
+}
+.inifooter i {
+    margin-right: .3em;
+    margin-left: .3em;
+    margin-top: 10px;
+    margin-bottom: 5px; 
+}
