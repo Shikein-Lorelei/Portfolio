@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portofolio | Raditya Nala Argya Wijaya</title>
+</head>
+
+<body id="home">
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/favicon.png" alt="icon" width="30" height="24"
+                    class="d-inline-block align-text-top" />
+                Lorelei Project
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- music sidebar start -->
+    <div class="fixed-bottom">
+        <button class="menu-button" id="menuToggle">
+            <i class="fa-solid fa-music"></i>
+        </button>
+    </div>
+    <div class="sticky-top">
+        <div class="sidebar" id="sidebar">
+            <div id="Sidebarheader">
+                <h2>Playlist</h2>
+            </div>
+            <div class="mb-3">
+                <select id="songSelector" class="form-select" style="cursor: pointer;">
+                    <option value="" selected disabled>Select Song...</option>
+                </select>
+            </div>
+            <div class="marquee-container">
+                <span id="marqueeText" class="marquee-text">♬Now playing: </span>
+            </div>
+            <audio id="audioPlayer" src=""></audio>
+            <div class="controls">
+                <button id="playBtn" class="btn btn-warning">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <input style="margin-left: 25px;" type="range" id="seekBar" min="0" max="100" value="0" disabled>
+            </div>
+        </div>
+    </div>
+    <!-- music sidebar end -->
+
+    <!-- jumbotron start -->
+    <section class="jumbotron text-center">
+        <img src="assets/img/Foto.png" alt="Foto" width="200px" height="200px" class="rounded-circle ">
+        <h1 class="display-4 fs-3">Raditya Nala Argya Wijaya</h1>
+        <p class="lead">Student of SMKN 2 SURABAYA | Rekayasa Perangkat Lunak</p>
+        <p class="lead">"Nothing can come of nothing."</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#5000ca" fill-opacity="0.7"
+                d="M0,160L0,128L53.3,128L53.3,96L106.7,96L106.7,288L160,288L160,288L213.3,288L213.3,64L266.7,64L266.7,224L320,224L320,128L373.3,128L373.3,224L426.7,224L426.7,160L480,160L480,256L533.3,256L533.3,256L586.7,256L586.7,192L640,192L640,96L693.3,96L693.3,192L746.7,192L746.7,256L800,256L800,96L853.3,96L853.3,160L906.7,160L906.7,32L960,32L960,64L1013.3,64L1013.3,32L1066.7,32L1066.7,32L1120,32L1120,96L1173.3,96L1173.3,288L1226.7,288L1226.7,32L1280,32L1280,32L1333.3,32L1333.3,288L1386.7,288L1386.7,192L1440,192L1440,320L1386.7,320L1386.7,320L1333.3,320L1333.3,320L1280,320L1280,320L1226.7,320L1226.7,320L1173.3,320L1173.3,320L1120,320L1120,320L1066.7,320L1066.7,320L1013.3,320L1013.3,320L960,320L960,320L906.7,320L906.7,320L853.3,320L853.3,320L800,320L800,320L746.7,320L746.7,320L693.3,320L693.3,320L640,320L640,320L586.7,320L586.7,320L533.3,320L533.3,320L480,320L480,320L426.7,320L426.7,320L373.3,320L373.3,320L320,320L320,320L266.7,320L266.7,320L213.3,320L213.3,320L160,320L160,320L106.7,320L106.7,320L53.3,320L53.3,320L0,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- jumbotron end -->
+    <!-- about start -->
+    <section id="aboutbg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="about">
+            <path fill="#5000ca" fill-opacity="0.7"
+                d="M0,160L0,128L53.3,128L53.3,96L106.7,96L106.7,288L160,288L160,288L213.3,288L213.3,64L266.7,64L266.7,224L320,224L320,128L373.3,128L373.3,224L426.7,224L426.7,160L480,160L480,256L533.3,256L533.3,256L586.7,256L586.7,192L640,192L640,96L693.3,96L693.3,192L746.7,192L746.7,256L800,256L800,96L853.3,96L853.3,160L906.7,160L906.7,32L960,32L960,64L1013.3,64L1013.3,32L1066.7,32L1066.7,32L1120,32L1120,96L1173.3,96L1173.3,288L1226.7,288L1226.7,32L1280,32L1280,32L1333.3,32L1333.3,288L1386.7,288L1386.7,192L1440,192L1440,0L1386.7,0L1386.7,0L1333.3,0L1333.3,0L1280,0L1280,0L1226.7,0L1226.7,0L1173.3,0L1173.3,0L1120,0L1120,0L1066.7,0L1066.7,0L1013.3,0L1013.3,0L960,0L960,0L906.7,0L906.7,0L853.3,0L853.3,0L800,0L800,0L746.7,0L746.7,0L693.3,0L693.3,0L640,0L640,0L586.7,0L586.7,0L533.3,0L533.3,0L480,0L480,0L426.7,0L426.7,0L373.3,0L373.3,0L320,0L320,0L266.7,0L266.7,0L213.3,0L213.3,0L160,0L160,0L106.7,0L106.7,0L53.3,0L53.3,0L0,0L0,0Z">
+            </path>
+        </svg>
+        <div class="container">
+
+            <div class="row text-center">
+                <div class="col">
+                    <h2 class="fs-1 font-monospace">ABOUT ME</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center fs-5 text-center mb-2 mt-2">
+                <div class="col-md-4 float-sm-start">
+                    <p class="border border-dark border-5 rounded-3 bg-light">
+                        Saya adalah Siswa SMKN 2 Surabaya Jurusan Rekayasa Perangkat Lunak yang tertarik di Bidang Web
+                        Programming.
+                    </p>
+                </div>
+                <div class="col-md-4 float-sm-start">
+                    <p class="border border-dark border-5 rounded-3 bg-light">
+                        Saya menguasai Bahasa Pemrograman HTML, CSS, PHP, SQL dan dapat menggunakan Framework Laravel
+                        dan Bootstrap
+                    </p>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#5000ca" fill-opacity="0.7"
+                    d="M0,160L0,128L53.3,128L53.3,96L106.7,96L106.7,288L160,288L160,288L213.3,288L213.3,64L266.7,64L266.7,224L320,224L320,128L373.3,128L373.3,224L426.7,224L426.7,160L480,160L480,256L533.3,256L533.3,256L586.7,256L586.7,192L640,192L640,96L693.3,96L693.3,192L746.7,192L746.7,256L800,256L800,96L853.3,96L853.3,160L906.7,160L906.7,32L960,32L960,64L1013.3,64L1013.3,32L1066.7,32L1066.7,32L1120,32L1120,96L1173.3,96L1173.3,288L1226.7,288L1226.7,32L1280,32L1280,32L1333.3,32L1333.3,288L1386.7,288L1386.7,192L1440,192L1440,320L1386.7,320L1386.7,320L1333.3,320L1333.3,320L1280,320L1280,320L1226.7,320L1226.7,320L1173.3,320L1173.3,320L1120,320L1120,320L1066.7,320L1066.7,320L1013.3,320L1013.3,320L960,320L960,320L906.7,320L906.7,320L853.3,320L853.3,320L800,320L800,320L746.7,320L746.7,320L693.3,320L693.3,320L640,320L640,320L586.7,320L586.7,320L533.3,320L533.3,320L480,320L480,320L426.7,320L426.7,320L373.3,320L373.3,320L320,320L320,320L266.7,320L266.7,320L213.3,320L213.3,320L160,320L160,320L106.7,320L106.7,320L53.3,320L53.3,320L0,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+    <!-- about end -->
+    <!-- projects start -->
+    <section id="projects">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#5000ca" fill-opacity="0.7"
+                d="M0,160L0,128L53.3,128L53.3,96L106.7,96L106.7,288L160,288L160,288L213.3,288L213.3,64L266.7,64L266.7,224L320,224L320,128L373.3,128L373.3,224L426.7,224L426.7,160L480,160L480,256L533.3,256L533.3,256L586.7,256L586.7,192L640,192L640,96L693.3,96L693.3,192L746.7,192L746.7,256L800,256L800,96L853.3,96L853.3,160L906.7,160L906.7,32L960,32L960,64L1013.3,64L1013.3,32L1066.7,32L1066.7,32L1120,32L1120,96L1173.3,96L1173.3,288L1226.7,288L1226.7,32L1280,32L1280,32L1333.3,32L1333.3,288L1386.7,288L1386.7,192L1440,192L1440,0L1386.7,0L1386.7,0L1333.3,0L1333.3,0L1280,0L1280,0L1226.7,0L1226.7,0L1173.3,0L1173.3,0L1120,0L1120,0L1066.7,0L1066.7,0L1013.3,0L1013.3,0L960,0L960,0L906.7,0L906.7,0L853.3,0L853.3,0L800,0L800,0L746.7,0L746.7,0L693.3,0L693.3,0L640,0L640,0L586.7,0L586.7,0L533.3,0L533.3,0L480,0L480,0L426.7,0L426.7,0L373.3,0L373.3,0L320,0L320,0L266.7,0L266.7,0L213.3,0L213.3,0L160,0L160,0L106.7,0L106.7,0L53.3,0L53.3,0L0,0L0,0Z">
+            </path>
+        </svg>
+        <div class="container justify-content-center text-center">
+            <div class="row ">
+                <div class="col">
+                    <h2>PROJECTS</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card" style=" background-color: rgba(119, 66, 199, 0.498); border: 1px solid white; ">
+                        <img src="assets/img/KALKULATOR BANGUN DATAR.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Calculator Bangun Datar</h5>
+                            <hr>
+                            <a href="#modal1" style="text-decoration: none; color: white;" data-bs-toggle="modal">
+                                <button type="button" class="btn btn-dark">
+                                    Lihat Lengkap
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card" style=" background-color: rgba(119, 66, 199, 0.498); border: 1px solid white; ">
+                        <img src="assets/img/CRUD LARAVEL.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">CRUD Laravel</h5>
+                            <hr>
+                            <a href="#modal2" style="text-decoration: none; color: white;" data-bs-toggle="modal">
+                                <button type="button" class="btn btn-dark">
+                                    Lihat Lengkap
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card " style=" background-color: rgba(119, 66, 199, 0.498); border: 1px solid white; ">
+                        <img src="assets/img/RAPOR CPP.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Sistem Rapor Sederhana</h5>
+                            <hr>
+                            <a href="#modal3" style="text-decoration: none; color: white;" data-bs-toggle="modal">
+                                <button type="button" class="btn btn-dark">
+                                    Lihat Lengkap
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card " style=" background-color: rgba(119, 66, 199, 0.498); border: 1px solid white; ">
+                        <img src="assets/img/E-COMMERCE.jpg" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Commerce</h5>
+                            <hr>
+                            <a href="#modal4" style="text-decoration: none; color: white;" data-bs-toggle="modal">
+                                <button type="button" class="btn btn-dark">
+                                    Lihat Lengkap
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card " style=" background-color: rgba(119, 66, 199, 0.498); border: 1px solid white; ">
+                        <img src="assets/img/image.png" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Music Player</h5>
+                            <hr>
+                            <a href="#modal5" style="text-decoration: none; color: white;" data-bs-toggle="modal">
+                                <button type="button" class="btn btn-dark">
+                                    Lihat Lengkap
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card " style=" background-color: rgba(119, 66, 199, 0.498); border: 1px solid white; ">
+                        <img src="assets/img/Kalkulator-web.jpg" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Kalkulator Berbasis Web</h5>
+                            <hr>
+                            <a href="#modal6" style="text-decoration: none; color: white;" data-bs-toggle="modal">
+                                <button type="button" class="btn btn-dark">
+                                    Lihat Lengkap
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card " style=" background-color: rgba(119, 66, 199, 0.498); border: 1px solid white; ">
+                        <img src="assets/img/Construct3.jpg" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Game Sederhana Construct 3</h5>
+                            <hr>
+                            <a href="#modal7" style="text-decoration: none; color: white;" data-bs-toggle="modal">
+                                <button type="button" class="btn btn-dark">
+                                    Lihat Lengkap
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#5000ca" fill-opacity="0.7"
+                d="M0,64L0,32L53.3,32L53.3,288L106.7,288L106.7,256L160,256L160,256L213.3,256L213.3,128L266.7,128L266.7,128L320,128L320,224L373.3,224L373.3,288L426.7,288L426.7,96L480,96L480,192L533.3,192L533.3,32L586.7,32L586.7,160L640,160L640,160L693.3,160L693.3,256L746.7,256L746.7,64L800,64L800,256L853.3,256L853.3,160L906.7,160L906.7,128L960,128L960,96L1013.3,96L1013.3,64L1066.7,64L1066.7,160L1120,160L1120,64L1173.3,64L1173.3,96L1226.7,96L1226.7,96L1280,96L1280,256L1333.3,256L1333.3,192L1386.7,192L1386.7,128L1440,128L1440,320L1386.7,320L1386.7,320L1333.3,320L1333.3,320L1280,320L1280,320L1226.7,320L1226.7,320L1173.3,320L1173.3,320L1120,320L1120,320L1066.7,320L1066.7,320L1013.3,320L1013.3,320L960,320L960,320L906.7,320L906.7,320L853.3,320L853.3,320L800,320L800,320L746.7,320L746.7,320L693.3,320L693.3,320L640,320L640,320L586.7,320L586.7,320L533.3,320L533.3,320L480,320L480,320L426.7,320L426.7,320L373.3,320L373.3,320L320,320L320,320L266.7,320L266.7,320L213.3,320L213.3,320L160,320L160,320L106.7,320L106.7,320L53.3,320L53.3,320L0,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- projects end -->
+
+    <!-- modal start -->
+    <div class="modal fade" id="modal1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark" style="color: white;">
+                <div class="modal-header">
+                    <h1 style="font-size: 20px;">Calculator Bangun Datar C++</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/KALKULATOR BANGUN DATAR.jpg" class="card-img-top" alt="Project 1">
+                    <br><br>Saya menggunakan Bahasa Pemrograman C++ untuk membuat Calculator Bangun Datar <br>
+                    <br><br>
+                    <button type="button" class="btn btn-primary">
+                        <a href="https://github.com/Shikein-Lorelei/Calculator-CPP" style="color: rgb(255, 255, 255); text-decoration: none; opacity: 60%;">
+                            Lihat Project
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal2" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark" style="color: white;">
+                <div class="modal-header">
+                    <h1 style="font-size: 20px;">CRUD Laravel</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/CRUD LARAVEL.jpg" class="card-img-top" alt="Project 2">
+                    <br><br>Saya menggunakan Framework Laravel untuk membuat CRUD (Create, Read, Update, and Delete) dari Web Portofolio saya 
+                    <br>
+                    <br><br>
+                    <button type="button" class="btn btn-primary">
+                        <a href="https://github.com/Shikein-Lorelei/Portfolio-Laravel" style="color: rgb(255, 255, 255); text-decoration: none; opacity: 60%;">
+                            Lihat Project
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark" style="color: white;">
+                <div class="modal-header">
+                    <h1 style="font-size: 20px;">Sistem Rapor Sederhana C++</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/RAPOR CPP.jpg" class="card-img-top" alt="Project 3">
+                    <br><br>Saya menggunakan Bahasa Pemrograman C++ untuk membuat Sistem Rapor Sederhana yang berisi
+                    input jumlah siswa, nilai siswa dan kemudian sistem akan memunculkan Nilai rata-rata dari siswa yang
+                    diinputkan <br>
+                    <br><br>
+                    <button type="button" class="btn btn-primary">
+                        <a href="https://github.com/Shikein-Lorelei/Rapor-Sederhana-CPP" style="color: rgb(255, 255, 255); text-decoration: none; opacity: 60%;">
+                            Lihat Project
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal4" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark" style="color: white;">
+                <div class="modal-header">
+                    <h1 style="font-size: 20px;">E-Commerce</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/E-COMMERCE.jpg" class="card-img-top" alt="Project 4">
+                    <br><br>Saya menggunakan Bahasa Pemrograman HTML, PHP, dan SQL untuk membuat web E-Commerce dan saya
+                    ikut andil di Project ini sebagai Programmer Front-End <br>
+                    <br><br>
+                    <button type="button" class="btn btn-primary">
+                        <a href="https://github.com/Shikein-Lorelei/Immersive." style="color: rgb(255, 255, 255); text-decoration: none; opacity: 60%;">
+                            Lihat Project
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal5" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark" style="color: white;">
+                <div class="modal-header">
+                    <h1 style="font-size: 20px;">Web Music Player</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/image.png" class="card-img-top" alt="Project 4">
+                    <br><br>Saya menggunakan React JS + Vite sebagai Frontend dan Node js Express sebagai Backend.  <br>
+                    <br><br>
+                    <button type="button" class="btn btn-primary">
+                        <a href="https://github.com/Shikein-Lorelei/LoreleiMusic" style="color: rgb(255, 255, 255); text-decoration: none; opacity: 60%;">
+                            Lihat Project
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal6" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark" style="color: white;">
+                <div class="modal-header">
+                    <h1 style="font-size: 20px;">Kalkulator Web</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/Kalkulator-web.jpg" class="card-img-top" alt="Project 4">
+                    <br><br>Saya menggunakan HTML, CSS, JS untuk membuat Kalkulator Sederhana <br>
+                    <br><br>
+                    <button type="button" class="btn btn-primary">
+                        <a href="https://github.com/Shikein-Lorelei/Kalkulator-Web" style="color: rgb(255, 255, 255); text-decoration: none; opacity: 60%;">
+                            Lihat Project
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal7" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark" style="color: white;">
+                <div class="modal-header">
+                    <h1 style="font-size: 20px;">Game Sederhana Construct 3</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/Construct3.jpg" class="card-img-top" alt="Project 4">
+                    <br><br>Saya menggunakan Construct 3 untuk membuat Game Sederhana <br>
+                    <br><br>
+                    <button type="button" class="btn btn-primary">
+                        <a href="https://drive.google.com/drive/folders/146QDR2bm6j0IhbA-cLSZXB-LLbJ-HTg7?hl=ID" style="color: rgb(255, 255, 255); text-decoration: none; opacity: 60%;">
+                            Lihat Project
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal email -->
+    <div class="modal fade" id="modalemail" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-xl" style="width: fit-content;">
+            <div class="modal-content bg-dark" style="color: white;">
+                <div class="modal-body">
+                    radityanala100@gmail.com <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
+    <!-- Start footer -->
+    <footer class="text-dark text-center py-4" id="contact" style="background-color: #3f019e;">
+        <div class="container">
+            <div class=" inifooter d-flex justify-content-center mb-3">
+                <a href="https://www.instagram.com/shikein.desu/" style="color: white;">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://wa.link/lh6z0o" style="color: white;">
+                    <i class="fa-brands fa-whatsapp fa-2x"></i>
+                </a>
+                <a href="https://github.com/Shikein-Lorelei" style="color: white;">
+                    <i class="fa-brands fa-github fa-2x"></i>
+                </a>
+                <a href="https://discord.gg/CUZKEkDRR8" style="color: white;">
+                    <i class="fa-brands fa-discord fa-2x"></i>
+                </a>
+                <a href="#modalemail" style="color: white;" data-bs-toggle="modal">
+                    <i class="fa-regular fa-envelope fa-2x"></i>
+                </a>
+                <br>
+            </div>
+            <ul class="nav justify-content-center mb-3">
+                <li class="nav-item"><a href="#home" class="nav-link px-2 text-light">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link px-2 text-light">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link px-2 text-light">Projects</a></li>
+                <li class="nav-item"><a href="https://wa.link/lh6z0o" class="nav-link px-2 text-light">Contact</a></li>
+            </ul>
+            <p class="mb-0 text-light"> Copyright &#xA9;Lorelei-Project | 2025</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
